@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vesher.Api", "Vesher.Api\Vesher.Api.csproj", "{DE319D89-509C-4FBA-A5B6-FC1C24671148}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE319D89-509C-4FBA-A5B6-FC1C24671148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE319D89-509C-4FBA-A5B6-FC1C24671148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE319D89-509C-4FBA-A5B6-FC1C24671148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE319D89-509C-4FBA-A5B6-FC1C24671148}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FDEB81B-A0C4-4CB3-89AB-D6ABDCF9FE47}
+	EndGlobalSection
+EndGlobal
