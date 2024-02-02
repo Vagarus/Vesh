@@ -41,14 +41,17 @@ public class DbManager : IDisposable
         return result > 0;
     }
 
-    public async Task<bool> Create(string query) =>
-        await ExecuteNonQuery(query);
+    public async Task<bool> Create<TCreate>(TCreate entry)
+        where TCreate : IDatabaseCreatable =>
+        await ExecuteNonQuery(entry.CreateQuery);
 
-    public async Task<bool> Update(string query) =>
-        await ExecuteNonQuery(query);
+    public async Task<bool> Update<TUpdate>(TUpdate entry)
+        where TUpdate : IDatabaseUpdatable =>
+        await ExecuteNonQuery(entry.UpdateQuery);
 
-    public async Task<bool> Delete(string query) =>
-        await ExecuteNonQuery(query);
+    public async Task<bool> Delete<TDelete>(TDelete entry)
+        where TDelete : IDatabaseDeletable =>
+        await ExecuteNonQuery(entry.DeleteQuery);
 
     public void Dispose()
     {
